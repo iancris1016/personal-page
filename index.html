@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ian Zeng · 曾纪元 · Personal Page</title>
+    <meta name="description" content="曾纪元 Ian Zeng - 个人主页 · 国际贸易 / 品牌出海 / 媒体运营 / 摄影与写作">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Serif+SC:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav" id="nav">
+    <div class="nav-inner">
+        <a href="#top" class="nav-logo">
+            <span class="logo-serif">IAN ZENG</span><span class="logo-light">曾纪元</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="#about">介绍 · about me</a></li>
+            <li><a href="#experience">经历 · Experience</a></li>
+            <li><a href="#media">自媒体 · Media</a></li>
+            <li><a href="#reviews">乐评 · Music</a></li>
+            <li><a href="#gallery">摄影 · Photograph</a></li>
+            <li><a href="#contact">联系 · Contact</a></li>
+        </ul>
+        <button class="nav-toggle" id="navToggle" aria-label="menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<header class="hero" id="top">
+    <div class="hero-grid">
+        <div class="hero-text">
+            <div class="hero-head">
+                <div class="hero-id-avatar">
+                    <img class="photo-id" src="images/id-photo.jpg" alt="曾纪元 证件照" onerror="this.style.display='none';this.parentNode.insertAdjacentHTML('beforeend','<div class=\'photo-placeholder photo-id\' data-label=\'证件照 请放 images/id-photo.jpg\'><svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.2\'><circle cx=\'12\' cy=\'8\' r=\'4\'/><path d=\'M4 21c0-4.418 3.582-8 8-8s8 3.582 8 8\'/></svg></div>')">
+                </div>
+                <h1 class="hero-title">
+                    <span class="hero-line en">Hello, I'm <span class="name-blue name-serif">Ian</span></span>
+                    <span class="hero-line cn">你好，我是 <span class="name-blue">曾纪元</span></span>
+                </h1>
+            </div>
+            <p class="hero-subtitle">
+                江西财经大学 · 国际经济与贸易（数字贸易方向）27届<br>
+                关注国际贸易、品牌出海、媒体运营，以及摄影与写作。
+            </p>
+            <div class="hero-tags">
+                <span class="hero-tag">国际贸易</span>
+                <span class="hero-tag">品牌出海</span>
+                <span class="hero-tag">媒体运营</span>
+                <span class="hero-tag">摄影与写作</span>
+            </div>
+            <div class="hero-cta">
+                <a href="#experience" class="btn btn-primary">查看经历 · View Experience</a>
+                <a href="#contact" class="btn btn-ghost">联系我 · Get in Touch</a>
+            </div>
+        </div>
+        <div class="hero-photo">
+            <div class="hero-gallery">
+                <div class="hero-g-item hg-1">
+                    <img class="photo-placeholder photo-avatar" src="images/hero-1.jpg" alt="个人形象照 01" onerror="this.outerHTML='<div class=\'photo-placeholder photo-avatar\' data-label=\'图片缺失：hero-1.jpg\'><svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.2\'><circle cx=\'12\' cy=\'8\' r=\'4\'/><path d=\'M4 21c0-4.418 3.582-8 8-8s8 3.582 8 8\'/></svg></div>'">
+                </div>
+                <div class="hero-g-item hg-2">
+                    <img class="photo-placeholder photo-avatar" src="images/hero-2.jpg" alt="商务部研修班现场" onerror="this.outerHTML='<div class=\'photo-placeholder photo-avatar\' data-label=\'图片缺失：hero-2.jpg\'><svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.2\'><rect x=\'3\' y=\'5\' width=\'18\' height=\'14\' rx=\'2\'/><circle cx=\'8\' cy=\'10\' r=\'1.5\'/><circle cx=\'12\' cy=\'9\' r=\'1.5\'/><circle cx=\'16\' cy=\'10\' r=\'1.5\'/><path d=\'M3 17l3-3 2 2 2-3 3 2 2-2 3 3 3-3\'/></svg></div>'">
+                </div>
+                <div class="hero-g-item hg-5">
+                    <img class="photo-placeholder photo-avatar" src="images/hero-5.jpg" alt="正式形象照" onerror="this.outerHTML='<div class=\'photo-placeholder photo-avatar\' data-label=\'图片缺失：hero-5.jpg 请放正方形照片\'><svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.2\'><circle cx=\'12\' cy=\'8\' r=\'4\'/><path d=\'M4 21c0-4.418 3.582-8 8-8s8 3.582 8 8\'/></svg></div>'">
+                </div>
+                <div class="hero-g-item hg-3">
+                    <img class="photo-placeholder photo-avatar" src="images/hero-3.jpg" alt="工作现场" onerror="this.outerHTML='<div class=\'photo-placeholder photo-avatar\' data-label=\'图片缺失：hero-3.jpg\'><svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.2\'><rect x=\'3\' y=\'5\' width=\'18\' height=\'14\' rx=\'2\'/><circle cx=\'9\' cy=\'10\' r=\'2\'/><path d=\'M3 17l5-5 4 4 3-3 6 6\'/></svg></div>'">
+                </div>
+                <div class="hero-g-item hg-4">
+                    <img class="photo-placeholder photo-avatar" src="images/hero-4.jpg" alt="生活日常" onerror="this.outerHTML='<div class=\'photo-placeholder photo-avatar\' data-label=\'图片缺失：hero-4.jpg\'><svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.2\'><circle cx=\'12\' cy=\'11\' r=\'4\'/><path d=\'M3 18h18M5 18c2-4 6-5 9-2M19 18c-1-3-4-4-7-2\'/></svg></div>'">
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="simple-divider">
+</header>
+
+<section class="section about" id="about">
+    <div class="section-label">
+        <span class="label-num">01</span>
+        <h2 class="section-title">介绍<em> · about me</em></h2>
+    </div>
+
+    <div class="about-grid">
+        <div class="about-intro">
+            <p class="dropcap">
+                我是曾纪元，一个对世界保持好奇心的二十岁青年。在学业与职业探索的交叉路口，我选择用<strong>内容</strong>、<strong>数据</strong>与<strong>真诚</strong>构筑属于自己的经验池——从商务部国际研修班的双语讲台，到银行网点的陌拜走访；从抖音小红书的商业闭环，到欧美音乐的深度乐评。
+            </p>
+            <p>
+                我相信运营不止是流量游戏，而是<strong>人与人之间的连接</strong>；相信音乐不止是情绪出口，而是<strong>社区共鸣的语言</strong>；相信AI不止是效率工具，而是<strong>认知升级的杠杆</strong>。
+            </p>
+
+            <div class="about-directions">
+                <div class="dir-item" data-dir="1">
+                    <div class="dir-num">NO. 01</div>
+                    <div class="dir-name">国际贸易</div>
+                </div>
+                <div class="dir-item" data-dir="2">
+                    <div class="dir-num">NO. 02</div>
+                    <div class="dir-name">品牌出海</div>
+                </div>
+                <div class="dir-item" data-dir="3">
+                    <div class="dir-num">NO. 03</div>
+                    <div class="dir-name">媒体运营</div>
+                </div>
+                <div class="dir-item" data-dir="4">
+                    <div class="dir-num">NO. 04</div>
+                    <div class="dir-name">摄影与写作</div>
+                </div>
+
+                <div class="dir-detail" id="dir-1">
+                    <div class="dir-detail-title">主修课程 · Core Courses</div>
+                    <div class="dir-detail-body">
+                        <p>作为国际经济与贸易（数字贸易方向）专业的核心训练，系统学习贸易理论、国际营销、数字化工具与数据方法。</p>
+                        <ul>
+                            <li>跨文化商务沟通<span class="course-score">(96)</span></li>
+                            <li>英语口语<span class="course-score">(96)</span></li>
+                            <li>国际技术贸易<span class="course-score">(95)</span></li>
+                            <li>营销管理<span class="course-score">(94)</span></li>
+                            <li>国际市场营销<span class="course-score">(92)</span></li>
+                            <li>国际贸易实务<span class="course-score">(90)</span></li>
+                            <li>数据处理技术基础<span class="course-score">(90)</span></li>
+                            <li>计量经济学<span class="course-score">(90)</span></li>
+                            <li>跨境电子商务</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="dir-detail" id="dir-2">
+                    <div class="dir-detail-title">品牌出海 · Brand Global</div>
+                    <div class="dir-detail-body">
+                        <p>我把品牌出海看作是<strong>「内容力 × 文化力 × 渠道力」</strong>三者相乘的系统工程——它不只是把商品卖到海外，更是把一套生活方式、一种品牌故事，翻译为目标市场能共情的语言。</p>
+                        <p>我之所以把品牌出海作为职业规划方向之一，是因为：① 我的专业背景（国际贸易/数字贸易）天然对应跨境B2B/B2C链路、支付物流、合规与跨境政策；② 我的自媒体运营经验（内容选题、评论聚类、私域转化）可以平移为海外社媒的内容策略与用户运营；③ TikTok / Instagram 作为日常使用的活跃用户，我对海外内容生态的节奏感和审美偏好有真实体感，而非教科书式的二手经验。</p>
+                        <p>我希望未来能在<strong>「从0到1的品牌」</strong>里，把<strong>选品洞察 · 内容生产 · 达人合作 · 本地化社区</strong>四件事串成一条完整的增长线。</p>
+                    </div>
+                </div>
+
+                <div class="dir-detail" id="dir-3">
+                    <div class="dir-detail-title">媒体运营 · Media Operations</div>
+                    <div class="dir-detail-body">
+                        <p>从 2024 年末起，我先后多次独立尝试自媒体运营：从婚礼跟拍类账号的"公域引流-私域转化-复购转介绍"闭环实践，到欧美音乐乐评号的"热点选品-深度内容-评论区社区"建设，累计积累了从0到1的选题策划、内容撰写、封面设计、评论聚类与数据复盘能力。</p>
+                        <p>我把每一次内容发布都视作一次<strong>「小实验」</strong>——用 AI 工具做评论聚类，从用户的长评短评里反推他们到底在为什么买单；用统一的视觉系统提升账号辨识度，而不是拼单条爆款的运气。</p>
+                        <a href="#media" class="btn-black-small jump-link">
+                            查看自媒体主页 →
+                        </a>
+                    </div>
+                </div>
+
+                <div class="dir-detail" id="dir-4">
+                    <div class="dir-detail-title">摄影与写作 · Photography & Writing</div>
+                    <div class="dir-detail-body">
+                        <p>对我而言，摄影与写作从来不是"兴趣爱好"那么轻——它们是我理解世界的两种<strong>最诚实的语言</strong>。镜头教会我从场景里"框"出故事，文字教会我从细节里"挖"出情绪；前者是瞬间的凝视，后者是长久的思考。</p>
+                        <p>在工作现场我用摄影留住氛围与温度（商务部研修班、商赛控台、企业参访、银行走访）；在婚礼跟拍中我捕捉新人最不设防的瞬间；在乐评与内容号运营里我用 800~1500 字的长文，把一首好歌拆成一段可讨论、可共鸣、可投票的社区话题。</p>
+                        <p>无论未来在哪一个行业，我都希望<strong>用镜头留下真实、用文字把话说清楚</strong>——这两件事是我给自己定下的"底线能力"。</p>
+                        <a href="#reviews" class="btn-black-small jump-link">
+                            查看乐评作品 →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-info">
+            <div class="info-card">
+                <h3 class="info-title">个人信息 · Personal Info</h3>
+                <ul class="info-list">
+                    <li><span>姓名</span><b>曾纪元 / Ian Zeng</b></li>
+                    <li><span>年龄</span><b>20 岁</b></li>
+                    <li><span>院校</span><b>江西财经大学</b></li>
+                    <li><span>专业</span><b>国际经济与贸易（数字贸易）</b></li>
+                    <li><span>届别</span><b>27届</b></li>
+                    <li><span>加权</span><b>84.57 / 100</b></li>
+                    <li><span>邮箱</span><b>zeng.ian@outlook.com</b></li>
+                    <li><span>电话</span><b>+86 136 8791 8205</b></li>
+                </ul>
+            </div>
+
+            <div class="info-card awards-card">
+                <h3 class="info-title">荣誉奖项 · Honors & Awards</h3>
+                <ul class="awards-list">
+                    <li>
+                        <span class="award-year">2025</span>
+                        <span class="award-name">校级优秀团学工作者</span>
+                    </li>
+                    <li>
+                        <span class="award-year">2024</span>
+                        <span class="award-name">万企调研优秀结项</span>
+                    </li>
+                    <li>
+                        <span class="award-year">2024</span>
+                        <span class="award-name">伊利校园营销大赛 · 三等奖 / 最佳创意奖</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="skills-block">
+        <h3 class="skills-head">核心技能<em> · Core Skills</em></h3>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 8l6 6L21 2"/><path d="M21 4v6h-6"/><circle cx="5" cy="19" r="3"/></svg>
+                </div>
+                <h4>语言能力</h4>
+                <p>CET-4 575 · CET-6 505<br>商务双语沟通 · 基础笔译 · AI辅助口译</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z"/><path d="M2 12h20M12 2a15 15 0 010 20M12 2a15 15 0 000 20"/></svg>
+                </div>
+                <h4>AI 工具应用</h4>
+                <p>ChatGPT · Trae · DeepSeek<br>评论聚类 · 双语翻译 · 策略优化 · 信息检索</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3v18h18"/><path d="M7 14l4-4 4 4 5-5"/></svg>
+                </div>
+                <h4>数据分析</h4>
+                <p>Excel (VLOOKUP · 数据透视表)<br>Python/SQL 基础 · 数据清洗 · 用户洞察</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                </div>
+                <h4>办公与设计</h4>
+                <p>Word · PPT · 秀米 · 可画 · 剪映<br>内容策划 · 视觉设计 · 品牌VI · 摄影采集</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2c3 3 3 17 0 20M12 2c-3 3-3 17 0 20"/></svg>
+                </div>
+                <h4>平台运营</h4>
+                <p>抖音 · 小红书 · 公众号<br>公域引流 · 私域转化 · 复购维护 · 全链路</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+                </div>
+                <h4>国际视野</h4>
+                <p>TikTok · Instagram 活跃用户<br>欧美音乐市场 · 跨文化策划 · 外事接待</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section experience bg-alt" id="experience">
+    <div class="section-label">
+        <span class="label-num">02</span>
+        <h2 class="section-title">经历<em> · Experience</em></h2>
+    </div>
+
+    <div class="timeline">
+        <article class="timeline-item expandable">
+            <div class="tl-date">
+                <span class="tl-month">2026.09</span>
+                <span class="tl-dot"></span>
+            </div>
+            <div class="tl-card">
+                <div class="tl-header">
+                    <div>
+                        <h3>项目助理</h3>
+                        <p class="tl-org">商务部 · 发展中国家工商会优化营商环境研讨班</p>
+                    </div>
+                    <div class="tl-photos tl-photos-gallery">
+                        <div class="tl-photo"><img class="photo-placeholder" src="images/exp-1-1.jpg" alt="商务部开营仪式合影" onerror="this.outerHTML='<div class=&quot;tl-photo photo-placeholder&quot; data-label=&quot;图片缺失：exp-1-1.jpg&quot;><svg viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot;><rect x=&quot;3&quot; y=&quot;5&quot; width=&quot;18&quot; height=&quot;14&quot; rx=&quot;2&quot;/><circle cx=&quot;8&quot; cy=&quot;10&quot; r=&quot;1.5&quot;/><circle cx=&quot;12&quot; cy=&quot;9&quot; r=&quot;1.5&quot;/><circle cx=&quot;16&quot; cy=&quot;10&quot; r=&quot;1.5&quot;/><path d=&quot;M3 17l3-3 2 2 2-3 3 2 2-2 3 3 3-3&quot;/></svg></div>'"></div>
+                        <div class="tl-photo"><img class="photo-placeholder" src="images/exp-1-2.jpg" alt="商务部双语接待现场" onerror="this.outerHTML='<div class=&quot;tl-photo photo-placeholder&quot; data-label=&quot;图片缺失：exp-1-2.jpg&quot;><svg viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot;><rect x=&quot;3&quot; y=&quot;5&quot; width=&quot;18&quot; height=&quot;14&quot; rx=&quot;2&quot;/><circle cx=&quot;9&quot; cy=&quot;10&quot; r=&quot;2&quot;/><path d=&quot;M3 17l5-5 4 4 3-3 6 6&quot;/></svg></div>'"></div>
+                        <div class="tl-photo"><img class="photo-placeholder" src="images/exp-1-3.jpg" alt="商务部企业参访翻译" onerror="this.outerHTML='<div class=&quot;tl-photo photo-placeholder&quot; data-label=&quot;图片缺失：exp-1-3.jpg&quot;><svg viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot;><rect x=&quot;3&quot; y=&quot;5&quot; width=&quot;18&quot; height=&quot;14&quot; rx=&quot;2&quot;/><circle cx=&quot;9&quot; cy=&quot;10&quot; r=&quot;2&quot;/><path d=&quot;M3 17l5-5 4 4 3-3 6 6&quot;/></svg></div>'"></div>
+                        <div class="tl-photo"><img class="photo-placeholder" src="images/exp-1-4.jpg" alt="商务部活动现场" onerror="this.outerHTML='<div class=&quot;tl-photo photo-placeholder&quot; data-label=&quot;图片缺失：exp-1-4.jpg&quot;><svg viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot;><rect x=&quot;3&quot; y=&quot;5&quot; width=&quot;18&quot; height=&quot;14&quot; rx=&quot;2&quot;/><circle cx=&quot;9&quot; cy=&quot;10&quot; r=&quot;2&quot;/><path d=&quot;M3 17l5-5 4 4 3-3 6 6&quot;/></svg></div>'"></div>
+                    </div>
+                </div>
+                <div class="tl-body">
+                    <p>商务部主办的面向发展中国家工商会官员的营商环境主题国际研修班，需要全程协调国际学员在华行程、提供双语支持并完成项目宣传工作，涉及跨部门协作、外事接待与多语种沟通场景。负责项目行程、接待、入住、日常协调与双语支持，服务23名来自发展中国家的国际学员，保障课程、企业参访与生活事务顺利推进，并完成项目宣传与资料产出。</p>
+                    <div class="result-wrap">
+                        <button class="result-toggle">
+                            查看详情 · Action & Result
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                        </button>
+                        <div class="result-inner">
+                            <h5 class="result-h">工作内容 · Action</h5>
+                            <ul class="result-ul">
+                                <li>负责各方行程、接待及项目期间日常协调，服务23名来自发展中国家的国际学员，处理学员在华各类生活事务，<strong>独立制作可复用的英文版《南昌生活指南》</strong></li>
+                                <li>负责项目全程的中英双语支持，完成约60页授课PPT的笔译工作，运用AI工具辅助现场沟通与提问答疑；<strong>独立承担3次约40分钟企业考察环节的现场交流翻译</strong></li>
+                                <li>负责全程摄影及宣传素材采集，<strong>独立撰写1篇项目新闻稿</strong>，完成3份学员新闻简报的英文翻译，支撑项目宣传与内容产出</li>
+                            </ul>
+                            <h5 class="result-h">最终成果 · Result</h5>
+                            <p class="tl-result">高效保障国际研修班全流程顺利推进，双语工作与生活服务获得学员与项目组认可，宣传资料及时交付，支撑项目对外形象展示。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="timeline-item expandable">
+            <div class="tl-date">
+                <span class="tl-month">2026.07—08</span>
+                <span class="tl-dot"></span>
+            </div>
+            <div class="tl-card">
+                <div class="tl-header">
+                    <div>
+                        <h3>营销方向实习生</h3>
+                        <p class="tl-org">浙江泰隆商业银行 · 衢州分行</p>
+                    </div>
+                    <div class="tl-photos tl-photos-gallery">
+                        <div class="tl-photo"><img class="photo-placeholder" src="images/exp-2-1.jpg" alt="泰隆银行 网点走访现场" onerror="this.outerHTML='<div class=&quot;tl-photo photo-placeholder&quot; data-label=&quot;图片缺失：exp-2-1.jpg&quot;><svg viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot;><rect x=&quot;3&quot; y=&quot;5&quot; width=&quot;18&quot; height=&quot;14&quot; rx=&quot;2&quot;/><circle cx=&quot;9&quot; cy=&quot;10&quot; r=&quot;2&quot;/><path d=&quot;M3 17l5-5 4 4 3-3 6 6&quot;/></svg></div>'"></div>
+                        <div class="tl-photo"><img class="photo-placeholder" src="images/exp-2-2.jpg" alt="泰隆银行 客户面谈记录" onerror="this.outerHTML='<div class=&quot;tl-photo photo-placeholder&quot; data-label=&quot;图片缺失：exp-2-2.jpg&quot;><svg viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot;><rect x=&quot;3&quot; y=&quot;3&quot; width=&quot;18&quot; height=&quot;18&quot; rx=&quot;2&quot;/><path d=&quot;M7 7h10M7 12h10M7 17h6&quot;/></svg></div>'"></div>
+                        <div class="tl-photo"><img class="photo-placeholder" src="images/exp-2-3.jpg" alt="泰隆银行 客户活动现场" onerror="this.outerHTML='<div class=&quot;tl-photo photo-placeholder&quot; data-label=&quot;图片缺失：exp-2-3.jpg&quot;><svg viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot;><rect x=&quot;3&quot; y=&quot;5&quot; width=&quot;18&quot; height=&quot;14&quot; rx=&quot;2&quot;/><circle cx=&quot;8&quot; cy=&quot;10&quot; r=&quot;1.5&quot;/><circle cx=&quot;12&quot; cy=&quot;9&quot; r=&quot;1.5&quot;/><circle cx=&quot;16&quot; cy=&quot;10&quot; r=&quot;1.5&quot;/><path d=&quot;M3 17l3-3 2 2 2-3 3 2 2-2 3 3 3-3&quot;/></svg></div>'"></div>
+                        <div class="tl-photo"><img class="photo-placeholder" src="images/exp-2-4.jpg" alt="泰隆银行实习现场" onerror="this.outerHTML='<div class=&quot;tl-photo photo-placeholder&quot; data-label=&quot;图片缺失：exp-2-4.jpg&quot;><svg viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot;><rect x=&quot;3&quot; y=&quot;5&quot; width=&quot;18&quot; height=&quot;14&quot; rx=&quot;2&quot;/><circle cx=&quot;9&quot; cy=&quot;10&quot; r=&quot;2&quot;/><path d=&quot;M3 17l5-5 4 4 3-3 6 6&quot;/></svg></div>'"></div>
+                    </div>
+                </div>
+                <div class="tl-body">
+                    <p>银行暑期实习，参与基层网点客户开发与维护工作，面对社区、农村及小微商户多类客群的差异化需求。协助客户经理完成潜在客户挖掘、客户关系维护、业务面谈及数据管理工作，确保客户信息准确完整、潜在需求有效跟进。</p>
+                    <div class="result-wrap">
+                        <button class="result-toggle">
+                            查看详情 · Action & Result
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                        </button>
+                        <div class="result-inner">
+                            <h5 class="result-h">工作内容 · Action</h5>
+                            <ul class="result-ul">
+                                <li>协助建立117位潜在客户档案，系统梳理客户基础信息并分类细分客群；深度参与社区、农村及本地商户走访，<strong>累计触达200+人次</strong>，记录需求并跟进潜在客户</li>
+                                <li>参与客户电话访谈与业务面谈，围绕需求开展精准沟通并整理访谈记录；协助组织企业客户活动，为<strong>15位核心潜在客户</strong>提供一对一产品介绍、注册指导与业务咨询</li>
+                                <li>整理并核对<strong>600+位客户信息</strong>，完成<strong>200+人次</strong>客户需求及面访记录的系统录入与实时更新，持续跟进客户信息变更与资料完善，确保数据质量可靠</li>
+                            </ul>
+                            <h5 class="result-h">最终成果 · Result</h5>
+                            <p class="tl-result">高效完成实习期间客户开发与数据管理任务，协助团队维护客户档案完整性，为后续业务跟进奠定数据基础。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="timeline-item expandable">
+            <div class="tl-date">
+                <span class="tl-month">2026.05—07</span>
+                <span class="tl-dot"></span>
+            </div>
+            <div class="tl-card">
+                <div class="tl-header">
+                    <div>
+                        <h3>新媒体运营实习生</h3>
+                        <p class="tl-org">南昌班刻教育咨询有限公司</p>
+                    </div>
+                    <div class="tl-photos tl-photos-gallery">
+                        <div class="tl-photo"><img class="photo-placeholder" src="images/exp-3-1.jpg" alt="班刻教育 公众号编辑现场" onerror="this.outerHTML='<div class=&quot;tl-photo photo-placeholder&quot; data-label=&quot;图片缺失：exp-3-1.jpg&quot;><svg viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot;><rect x=&quot;3&quot; y=&quot;3&quot; width=&quot;18&quot; height=&quot;18&quot; rx=&quot;2&quot;/><path d=&quot;M4 7h16M4 12h16M4 17h10&quot;/></svg></div>'"></div>
+                        <div class="tl-photo"><img class="photo-placeholder" src="images/exp-3-2.jpg" alt="班刻教育 招聘海报设计" onerror="this.outerHTML='<div class=&quot;tl-photo photo-placeholder&quot; data-label=&quot;图片缺失：exp-3-2.jpg&quot;><svg viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot;><rect x=&quot;3&quot; y=&quot;3&quot; width=&quot;18&quot; height=&quot;18&quot; rx=&quot;2&quot;/><rect x=&quot;6&quot; y=&quot;6&quot; width=&quot;12&quot; height=&quot;12&quot;/></svg></div>'"></div>
+                        <div class="tl-photo"><img class="photo-placeholder" src="images/exp-3-3.jpg" alt="班刻教育 内容产出归档" onerror="this.outerHTML='<div class=&quot;tl-photo photo-placeholder&quot; data-label=&quot;图片缺失：exp-3-3.jpg&quot;><svg viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot;><path d=&quot;M4 4h10l6 6v10a2 2 0 01-2 2H4z&quot;/><path d=&quot;M14 4v6h6&quot;/></svg></div>'"></div>
+                        <div class="tl-photo"><img class="photo-placeholder" src="images/exp-3-4.jpg" alt="班刻教育工作现场" onerror="this.outerHTML='<div class=&quot;tl-photo photo-placeholder&quot; data-label=&quot;图片缺失：exp-3-4.jpg&quot;><svg viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot;><rect x=&quot;3&quot; y=&quot;3&quot; width=&quot;18&quot; height=&quot;18&quot; rx=&quot;2&quot;/><path d=&quot;M4 7h16M4 12h16M4 17h10&quot;/></svg></div>'"></div>
+                    </div>
+                </div>
+                <div class="tl-body">
+                    <p>教育咨询公司新媒体部门实习，负责微信公众号内容运营与校园招聘视觉物料制作，面对高频的内容产出需求与多源招聘信息整合挑战。独立完成公众号内容策划、编辑与发布，同时批量处理招聘信息与设计宣传物料，确保内容质量与发布效率双达标。</p>
+                    <div class="result-wrap">
+                        <button class="result-toggle">
+                            查看详情 · Action & Result
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                        </button>
+                        <div class="result-inner">
+                            <h5 class="result-h">工作内容 · Action</h5>
+                            <ul class="result-ul">
+                                <li>负责微信公众号内容编辑、排版与日常发布，使用秀米、可画等工具<strong>独立完成原创文章与资讯类内容共8篇</strong>，覆盖内容策划、信息整合与视觉设计全流程</li>
+                                <li>根据多来源招聘资料，完成<strong>累计135+条微信推文</strong>的信息整理、制作、编辑与校对，统一处理格式与内容规范，确保零差错发布</li>
+                                <li>使用可画完成<strong>27组（共上百张）校园招聘岗位宣传图</strong>的版式设计与制作，并<strong>独立产出2篇求职经验分享专题内容</strong>，负责信息可视化、海报设计与发布执行</li>
+                            </ul>
+                            <h5 class="result-h">最终成果 · Result</h5>
+                            <p class="tl-result">实习期间独立高效完成内容产出与视觉设计任务，支撑公众号日常运营节奏与校园招聘宣传推广需求。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="timeline-item expandable">
+            <div class="tl-date">
+                <span class="tl-month">2023.09—2025.08</span>
+                <span class="tl-dot"></span>
+            </div>
+            <div class="tl-card">
+                <div class="tl-header">
+                    <div>
+                        <h3>委员 → 负责人</h3>
+                        <p class="tl-org">国际经济与政治学院学生会 · 创新创业部</p>
+                    </div>
+                    <div class="tl-photos tl-photos-gallery">
+                        <div class="tl-photo"><img class="photo-placeholder" src="images/exp-4-1.jpg" alt="学生会 商赛现场控台" onerror="this.outerHTML='<div class=&quot;tl-photo photo-placeholder&quot; data-label=&quot;图片缺失：exp-4-1.jpg&quot;><svg viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot;><rect x=&quot;3&quot; y=&quot;5&quot; width=&quot;18&quot; height=&quot;14&quot; rx=&quot;2&quot;/><circle cx=&quot;9&quot; cy=&quot;10&quot; r=&quot;2&quot;/><path d=&quot;M3 17l5-5 4 4 3-3 6 6&quot;/></svg></div>'"></div>
+                        <div class="tl-photo"><img class="photo-placeholder" src="images/exp-4-2.jpg" alt="学生会 班级宣讲推广" onerror="this.outerHTML='<div class=&quot;tl-photo photo-placeholder&quot; data-label=&quot;图片缺失：exp-4-2.jpg&quot;><svg viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot;><rect x=&quot;3&quot; y=&quot;5&quot; width=&quot;18&quot; height=&quot;14&quot; rx=&quot;2&quot;/><circle cx=&quot;8&quot; cy=&quot;10&quot; r=&quot;1.5&quot;/><circle cx=&quot;12&quot; cy=&quot;9&quot; r=&quot;1.5&quot;/><circle cx=&quot;16&quot; cy=&quot;10&quot; r=&quot;1.5&quot;/><path d=&quot;M3 17l3-3 2 2 2-3 3 2 2-2 3 3 3-3&quot;/></svg></div>'"></div>
+                        <div class="tl-photo"><img class="photo-placeholder" src="images/exp-4-3.jpg" alt="学生会 获奖合影" onerror="this.outerHTML='<div class=&quot;tl-photo photo-placeholder&quot; data-label=&quot;图片缺失：exp-4-3.jpg&quot;><svg viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot;><rect x=&quot;3&quot; y=&quot;5&quot; width=&quot;18&quot; height=&quot;14&quot; rx=&quot;2&quot;/><circle cx=&quot;9&quot; cy=&quot;10&quot; r=&quot;2&quot;/><path d=&quot;M3 17l5-5 4 4 3-3 6 6&quot;/></svg></div>'"></div>
+                        <div class="tl-photo"><img class="photo-placeholder" src="images/exp-4-4.jpg" alt="学生会活动现场" onerror="this.outerHTML='<div class=&quot;tl-photo photo-placeholder&quot; data-label=&quot;图片缺失：exp-4-4.jpg&quot;><svg viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot;><rect x=&quot;3&quot; y=&quot;5&quot; width=&quot;18&quot; height=&quot;14&quot; rx=&quot;2&quot;/><circle cx=&quot;9&quot; cy=&quot;10&quot; r=&quot;2&quot;/><path d=&quot;M3 17l5-5 4 4 3-3 6 6&quot;/></svg></div>'"></div>
+                    </div>
+                </div>
+                <div class="tl-body">
+                    <p>统筹学院及全国性商业模拟赛事运营，需要协调多部门资源，面对赛事参与度不足、流程不标准化的挑战。建立标准化赛事执行流程，提升赛事参与度，确保13场商赛高质量零失误落地。</p>
+                    <div class="result-wrap">
+                        <button class="result-toggle">
+                            查看详情 · Action & Result
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                        </button>
+                        <div class="result-inner">
+                            <h5 class="result-h">工作内容 · Action</h5>
+                            <ul class="result-ul">
+                                <li>统筹执行<strong>7场全国性及6场校级商业模拟赛事</strong>，制定标准化执行手册，覆盖前中后期宣传协调、现场控场与赛后复盘，<strong>实现零失误落地</strong></li>
+                                <li>主导赛事推广，针对不同赛事特点设计分阶段宣传策略，通过班级宣讲、公众号推送、社群运营等多渠道<strong>触达目标人群3000+人次</strong></li>
+                                <li>建立跨部门协作机制，协调宣传部制作宣发物料，联动外联部对接赞助商资源，确保每场活动资源到位、流程顺畅</li>
+                            </ul>
+                            <h5 class="result-h">最终成果 · Result</h5>
+                            <p class="tl-result">赛事参与率同比提升30%，助力学院斩获2次"最佳组织奖"，部门获评校级"优秀部门"。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="timeline-item expandable">
+            <div class="tl-date">
+                <span class="tl-month">2024.07—08</span>
+                <span class="tl-dot"></span>
+            </div>
+            <div class="tl-card">
+                <div class="tl-header">
+                    <div>
+                        <h3>项目副组长</h3>
+                        <p class="tl-org">万企调研 · 玉山电商产业数智化项目</p>
+                    </div>
+                    <div class="tl-photos tl-photos-gallery">
+                        <div class="tl-photo"><img class="photo-placeholder" src="images/exp-5-1.jpg" alt="万企调研 企业深度访谈" onerror="this.outerHTML='<div class=&quot;tl-photo photo-placeholder&quot; data-label=&quot;图片缺失：exp-5-1.jpg&quot;><svg viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot;><rect x=&quot;3&quot; y=&quot;5&quot; width=&quot;18&quot; height=&quot;14&quot; rx=&quot;2&quot;/><circle cx=&quot;9&quot; cy=&quot;10&quot; r=&quot;2&quot;/><path d=&quot;M3 17l5-5 4 4 3-3 6 6&quot;/></svg></div>'"></div>
+                        <div class="tl-photo"><img class="photo-placeholder" src="images/exp-5-2.jpg" alt="万企调研 电商产业园" onerror="this.outerHTML='<div class=&quot;tl-photo photo-placeholder&quot; data-label=&quot;图片缺失：exp-5-2.jpg&quot;><svg viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot;><rect x=&quot;3&quot; y=&quot;7&quot; width=&quot;18&quot; height=&quot;10&quot; rx=&quot;1&quot;/><circle cx=&quot;8&quot; cy=&quot;11&quot; r=&quot;1.2&quot;/><circle cx=&quot;12&quot; cy=&quot;10&quot; r=&quot;1.2&quot;/><circle cx=&quot;16&quot; cy=&quot;11&quot; r=&quot;1.2&quot;/><circle cx=&quot;20&quot; cy=&quot;10&quot; r=&quot;1.2&quot;/></svg></div>'"></div>
+                        <div class="tl-photo"><img class="photo-placeholder" src="images/exp-5-3.jpg" alt="万企调研 报告撰写现场" onerror="this.outerHTML='<div class=&quot;tl-photo photo-placeholder&quot; data-label=&quot;图片缺失：exp-5-3.jpg&quot;><svg viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot;><rect x=&quot;3&quot; y=&quot;3&quot; width=&quot;18&quot; height=&quot;18&quot; rx=&quot;2&quot;/><path d=&quot;M7 7h10M7 12h10M7 17h6&quot;/></svg></div>'"></div>
+                        <div class="tl-photo"><img class="photo-placeholder" src="images/exp-5-4.jpg" alt="万企调研现场记录" onerror="this.outerHTML='<div class=&quot;tl-photo photo-placeholder&quot; data-label=&quot;图片缺失：exp-5-4.jpg&quot;><svg viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot;><rect x=&quot;3&quot; y=&quot;3&quot; width=&quot;18&quot; height=&quot;18&quot; rx=&quot;2&quot;/><path d=&quot;M7 7h10M7 12h10M7 17h6&quot;/></svg></div>'"></div>
+                    </div>
+                </div>
+                <div class="tl-body">
+                    <p>带队深入玉山电商产业园开展实地调研，面对物流、跨境、直播电商等多业态差异化运营模式与数字化转型政策。系统梳理电商产业数字化运营现状，提炼可复用优化方案，产出高质量调研报告供管委会参考。</p>
+                    <div class="result-wrap">
+                        <button class="result-toggle">
+                            查看详情 · Action & Result
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                        </button>
+                        <div class="result-inner">
+                            <h5 class="result-h">工作内容 · Action</h5>
+                            <ul class="result-ul">
+                                <li>带队深度访谈园区管委会及<strong>10余家电商企业</strong>（涵盖物流、跨境、直播电商等业态），系统梳理国家及地方数字化扶持政策（税收优惠、电商补贴等）与传统企业转型路径，分析电商企业供应链成本与效率优化空间</li>
+                                <li>基于调研成果提炼可复用的平台运营优化方案，<strong>组织撰写1.2万字《玉山电商产业数智化发展调研报告》</strong>，整合政策解读与企业案例，编创成果展示册</li>
+                            </ul>
+                            <h5 class="result-h">最终成果 · Result</h5>
+                            <p class="tl-result">项目获评"万企调研优秀结项"，报告被园区管委会采纳参考，成果册作为学院优秀实践教学案例。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="timeline-item expandable">
+            <div class="tl-date">
+                <span class="tl-month">2024.03—05</span>
+                <span class="tl-dot"></span>
+            </div>
+            <div class="tl-card">
+                <div class="tl-header">
+                    <div>
+                        <h3>队长</h3>
+                        <p class="tl-org">伊利校园营销大赛</p>
+                    </div>
+                    <div class="tl-photos tl-photos-gallery">
+                        <div class="tl-photo"><img class="photo-placeholder" src="images/exp-6-1.jpg" alt="伊利大赛 路演汇报现场" onerror="this.outerHTML='<div class=&quot;tl-photo photo-placeholder&quot; data-label=&quot;图片缺失：exp-6-1.jpg&quot;><svg viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot;><rect x=&quot;3&quot; y=&quot;5&quot; width=&quot;18&quot; height=&quot;14&quot; rx=&quot;2&quot;/><circle cx=&quot;9&quot; cy=&quot;10&quot; r=&quot;2&quot;/><path d=&quot;M3 17l5-5 4 4 3-3 6 6&quot;/></svg></div>'"></div>
+                        <div class="tl-photo"><img class="photo-placeholder" src="images/exp-6-2.jpg" alt="伊利大赛 线下自提站" onerror="this.outerHTML='<div class=&quot;tl-photo photo-placeholder&quot; data-label=&quot;图片缺失：exp-6-2.jpg&quot;><svg viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot;><rect x=&quot;3&quot; y=&quot;5&quot; width=&quot;18&quot; height=&quot;14&quot; rx=&quot;2&quot;/><rect x=&quot;8&quot; y=&quot;8&quot; width=&quot;8&quot; height=&quot;8&quot;/></svg></div>'"></div>
+                        <div class="tl-photo"><img class="photo-placeholder" src="images/exp-6-3.jpg" alt="伊利大赛 团队合影" onerror="this.outerHTML='<div class=&quot;tl-photo photo-placeholder&quot; data-label=&quot;图片缺失：exp-6-3.jpg&quot;><svg viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot;><rect x=&quot;3&quot; y=&quot;5&quot; width=&quot;18&quot; height=&quot;14&quot; rx=&quot;2&quot;/><circle cx=&quot;8&quot; cy=&quot;10&quot; r=&quot;1.5&quot;/><circle cx=&quot;12&quot; cy=&quot;9&quot; r=&quot;1.5&quot;/><circle cx=&quot;16&quot; cy=&quot;10&quot; r=&quot;1.5&quot;/><path d=&quot;M3 17l3-3 2 2 2-3 3 2 2-2 3 3 3-3&quot;/></svg></div>'"></div>
+                        <div class="tl-photo"><img class="photo-placeholder" src="images/exp-6-4.jpg" alt="伊利大赛现场" onerror="this.outerHTML='<div class=&quot;tl-photo photo-placeholder&quot; data-label=&quot;图片缺失：exp-6-4.jpg&quot;><svg viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot;><rect x=&quot;3&quot; y=&quot;5&quot; width=&quot;18&quot; height=&quot;14&quot; rx=&quot;2&quot;/><circle cx=&quot;9&quot; cy=&quot;10&quot; r=&quot;2&quot;/><path d=&quot;M3 17l5-5 4 4 3-3 6 6&quot;/></svg></div>'"></div>
+                    </div>
+                </div>
+                <div class="tl-body">
+                    <p>带队参与伊利校园营销大赛，旨在提升产品在校园市场的销售额与品牌影响力，面对激烈的校园同质化竞争。创新销售模式与营销创意，在竞争中脱颖而出并提升销售业绩。</p>
+                    <div class="result-wrap">
+                        <button class="result-toggle">
+                            查看详情 · Action & Result
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                        </button>
+                        <div class="result-inner">
+                            <h5 class="result-h">工作内容 · Action</h5>
+                            <ul class="result-ul">
+                                <li>创新设计<strong>「线上营销获客-私域转化-线上订单-线下自提」</strong>的O2O销售闭环，打通流量获取与转化交付链路</li>
+                                <li>负责路演PPT撰写与现场汇报，向伊利销售经理展示团队创意方案与市场执行成果</li>
+                            </ul>
+                            <h5 class="result-h">最终成果 · Result</h5>
+                            <p class="tl-result">最终销售额位列全校第四；路演创意获伊利销售经理高度认可，团队荣获"最佳创意奖"与"三等奖"。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>
+
+<section class="section media" id="media">
+    <div class="section-label">
+        <span class="label-num">03</span>
+        <h2 class="section-title">自媒体<em> · Media</em></h2>
+    </div>
+
+    <div class="media-wrap">
+        <div class="media-card media-douyin media-expandable" data-media="dy">
+            <div class="media-head">
+                <span class="media-tag">抖音 · 婚礼跟拍</span>
+                <h3>抖音婚礼跟拍账号</h3>
+            </div>
+            <div class="media-stats">
+                <div><b>7W+</b><span>播放量</span></div>
+                <div><b>157</b><span>粉丝数</span></div>
+                <div><b>67+</b><span>意向客户</span></div>
+            </div>
+            <div class="media-shot-wrap">
+                <div class="media-screenshot photo-dy">
+                    <img class="photo-placeholder" src="images/media-1.jpg" alt="抖音婚礼跟拍账号主页截图" onerror="this.outerHTML='<div class=&quot;photo-placeholder&quot; data-label=&quot;图片缺失：media-1.jpg（抖音主页截图）&quot;><svg viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1&quot;><path d=&quot;M9 3v12a3 3 0 11-3-3&quot;/><path d=&quot;M9 3h6a4 4 0 004 4v0&quot;/><rect x=&quot;3&quot; y=&quot;3&quot; width=&quot;18&quot; height=&quot;18&quot; rx=&quot;2&quot;/></svg></div>'">
+                </div>
+                <div class="shot-fade"></div>
+            </div>
+            <div class="media-hint">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                <span>点击展开预览</span>
+            </div>
+        </div>
+
+        <div class="media-card media-music media-expandable" data-media="xhs">
+            <div class="media-head">
+                <span class="media-tag">小红书 · 乐评</span>
+                <h3>欧美音乐乐评账号</h3>
+            </div>
+            <div class="media-stats">
+                <div><b>7.8W+</b><span>累计浏览</span></div>
+                <div><b>6000+</b><span>点赞数</span></div>
+                <div><b>129</b><span>单篇最高评论</span></div>
+            </div>
+            <div class="media-shot-wrap">
+                <div class="media-screenshot photo-music">
+                    <img class="photo-placeholder" src="images/media-2.jpg" alt="小红书欧美音乐乐评账号主页截图" onerror="this.outerHTML='<div class=&quot;photo-placeholder&quot; data-label=&quot;图片缺失：media-2.jpg（小红书乐评账号截图）&quot;><svg viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1&quot;><path d=&quot;M9 18V5l12-2v13&quot;/><circle cx=&quot;6&quot; cy=&quot;18&quot; r=&quot;3&quot;/><circle cx=&quot;18&quot; cy=&quot;16&quot; r=&quot;3&quot;/><rect x=&quot;3&quot; y=&quot;3&quot; width=&quot;18&quot; height=&quot;18&quot; rx=&quot;2&quot;/></svg></div>'">
+                </div>
+                <div class="shot-fade"></div>
+            </div>
+            <div class="media-hint">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                <span>点击展开预览</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section reviews bg-alt" id="reviews">
+    <div class="section-label">
+        <span class="label-num">04</span>
+        <h2 class="section-title">乐评<em> · Music Reviews</em></h2>
+    </div>
+
+    <div class="reviews-header">
+        <blockquote>
+            "音乐是社区共鸣的语言，<br>每一条评论都是一次身份认同的投票。"
+        </blockquote>
+    </div>
+
+    <div class="reviews-grid">
+        <article class="review-card">
+            <div class="review-cover">
+                <img class="photo-placeholder" src="images/review-1.jpg" alt="C,XOXO 乐评封面" onerror="this.outerHTML='<div class=&quot;photo-placeholder review-cover&quot; data-label=&quot;图片缺失：review-1.jpg&quot;><svg viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1&quot;><circle cx=&quot;12&quot; cy=&quot;12&quot; r=&quot;9&quot;/><circle cx=&quot;12&quot; cy=&quot;12&quot; r=&quot;3&quot;/><circle cx=&quot;12&quot; cy=&quot;12&quot; r=&quot;0.8&quot;/></svg></div>'">
+            </div>
+            <div class="review-meta">
+                <span class="review-tag">深度乐评</span>
+                <h4 class="review-title">C,XOXO｜你永远也走不出那个迈阿密夏天</h4>
+                <p>我真诚地希望所有秦岭淮河以南的男孩女孩they孩都去听一听这张专辑。</p>
+                <div class="review-foot">
+                    <span>👁 14,500+</span><span>❤ 1,200+</span><span>💬 140+</span>
+                </div>
+            </div>
+        </article>
+
+        <article class="review-card">
+            <div class="review-cover">
+                <img class="photo-placeholder" src="images/review-2.jpg" alt="听欧美音乐乐评封面" onerror="this.outerHTML='<div class=&quot;photo-placeholder review-cover&quot; data-label=&quot;图片缺失：review-2.jpg&quot;><svg viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1&quot;><circle cx=&quot;12&quot; cy=&quot;12&quot; r=&quot;9&quot;/><circle cx=&quot;12&quot; cy=&quot;12&quot; r=&quot;3&quot;/><circle cx=&quot;12&quot; cy=&quot;12&quot; r=&quot;0.8&quot;/></svg></div>'">
+            </div>
+            <div class="review-meta">
+                <span class="review-tag talk">音乐漫谈</span>
+                <h4 class="review-title">听欧美音乐，是你对自己人生意义的再确定。</h4>
+                <p>没有一个所有人都相信的偶像，也没有一种生活可以说服所有人。经济下行让谨慎变成默认选项，表达立场越来越像一种冒险。</p>
+                <div class="review-foot">
+                    <span>👁 2,900+</span><span>❤ 500+</span><span>💬 30+</span>
+                </div>
+            </div>
+        </article>
+
+        <article class="review-card">
+            <div class="review-cover">
+                <img class="photo-placeholder" src="images/review-3.jpg" alt="45张蓝色封面专辑推荐" onerror="this.outerHTML='<div class=&quot;photo-placeholder review-cover&quot; data-label=&quot;图片缺失：review-3.jpg&quot;><svg viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1&quot;><circle cx=&quot;12&quot; cy=&quot;12&quot; r=&quot;9&quot;/><circle cx=&quot;12&quot; cy=&quot;12&quot; r=&quot;3&quot;/><circle cx=&quot;12&quot; cy=&quot;12&quot; r=&quot;0.8&quot;/></svg></div>'">
+            </div>
+            <div class="review-meta">
+                <span class="review-tag album">专辑推荐</span>
+                <h4 class="review-title">🦋45张蓝色封面专辑💙你一定听过几张</h4>
+                <p>从另类流行/R&B/电子到indie，全是我反复循环的收藏。</p>
+                <div class="review-foot">
+                    <span>👁 6,600+</span><span>❤ 200+</span><span>💬 20+</span>
+                </div>
+            </div>
+        </article>
+
+        <article class="review-card">
+            <div class="review-cover">
+                <img class="photo-placeholder" src="images/review-4.jpg" alt="Virgin 乐评封面" onerror="this.outerHTML='<div class=&quot;photo-placeholder review-cover&quot; data-label=&quot;图片缺失：review-4.jpg&quot;><svg viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1&quot;><circle cx=&quot;12&quot; cy=&quot;12&quot; r=&quot;9&quot;/><circle cx=&quot;12&quot; cy=&quot;12&quot; r=&quot;3&quot;/><circle cx=&quot;12&quot; cy=&quot;12&quot; r=&quot;0.8&quot;/></svg></div>'">
+            </div>
+            <div class="review-meta">
+                <span class="review-tag">深度乐评</span>
+                <h4 class="review-title">Virgin｜当我们谈论女人时，我们在谈论什么</h4>
+                <p>我不是女生，但我也能够感受在父权社会受到的压迫和注视。那种无处不在的纠缠会把我们的生命吞噬掉。</p>
+                <div class="review-foot">
+                    <span>👁 4,600+</span><span>❤ 350+</span><span>💬 20+</span>
+                </div>
+            </div>
+        </article>
+
+        <article class="review-card">
+            <div class="review-cover">
+                <img class="photo-placeholder" src="images/review-5.jpg" alt="2026电子舞曲大年推荐封面" onerror="this.outerHTML='<div class=&quot;photo-placeholder review-cover&quot; data-label=&quot;图片缺失：review-5.jpg&quot;><svg viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1&quot;><circle cx=&quot;12&quot; cy=&quot;12&quot; r=&quot;9&quot;/><circle cx=&quot;12&quot; cy=&quot;12&quot; r=&quot;3&quot;/><circle cx=&quot;12&quot; cy=&quot;12&quot; r=&quot;0.8&quot;/></svg></div>'">
+            </div>
+            <div class="review-meta">
+                <span class="review-tag album">专辑推荐</span>
+                <h4 class="review-title">POV：2026是完全的电子舞曲大年</h4>
+                <p>如果你也和我一样喜欢charli xcx/troye sivan/ADÉLA/kim petra/rose gray/tinashe等音乐家的话，来听听看吧！</p>
+                <div class="review-foot">
+                    <span>👁 5,300+</span><span>❤ 1,250+</span><span>💬 30+</span>
+                </div>
+            </div>
+        </article>
+
+        <article class="review-card">
+            <div class="review-cover">
+                <img class="photo-placeholder" src="images/review-6.jpg" alt="RAYE新专乐评封面" onerror="this.outerHTML='<div class=&quot;photo-placeholder review-cover&quot; data-label=&quot;图片缺失：review-6.jpg&quot;><svg viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1&quot;><circle cx=&quot;12&quot; cy=&quot;12&quot; r=&quot;9&quot;/><circle cx=&quot;12&quot; cy=&quot;12&quot; r=&quot;3&quot;/><circle cx=&quot;12&quot; cy=&quot;12&quot; r=&quot;0.8&quot;/></svg></div>'">
+            </div>
+            <div class="review-meta">
+                <span class="review-tag">深度乐评</span>
+                <h4 class="review-title">RAYE新专｜当一个女人开始厚重地书写</h4>
+                <p>一个女性决定开始书写自己的故事时，人们会不可避免地看到她的处境，她如何把伤口变成力量。</p>
+                <div class="review-foot">
+                    <span>👁 4,700+</span><span>❤ 300+</span><span>💬 20+</span>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>
+
+<section class="section gallery" id="gallery">
+    <div class="section-label">
+        <span class="label-num">05</span>
+        <h2 class="section-title">摄影<em> · Photograph</em></h2>
+    </div>
+
+    <p class="gallery-intro">
+        工作现场 · 婚礼跟拍 · 生活日常<br>
+        <span class="muted">点击展开分类查看全部作品 · Click a category to expand</span>
+    </p>
+
+    <div class="gallery-cats">
+        <div class="cat-card" data-cat="work">
+            <div class="cat-head">
+                <div class="cat-name">
+                    <h4>工作现场</h4>
+                    <span class="cat-en">On Site</span>
+                </div>
+                <span class="cat-count">8 PICS</span>
+            </div>
+            <div class="cat-preview">
+                <div class="cat-preview-item gallery-img">
+                    <img class="photo-placeholder" src="images/photo-work-1.jpg" alt="工作现场作品1" onerror="this.outerHTML='<div class=&quot;cat-preview-item photo-placeholder gallery-img&quot; data-label=&quot;图片缺失：photo-work-1.jpg&quot;><svg viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot;><rect x=&quot;3&quot; y=&quot;5&quot; width=&quot;18&quot; height=&quot;14&quot; rx=&quot;2&quot;/><circle cx=&quot;8&quot; cy=&quot;10&quot; r=&quot;1.5&quot;/><circle cx=&quot;12&quot; cy=&quot;9&quot; r=&quot;1.5&quot;/><circle cx=&quot;16&quot; cy=&quot;10&quot; r=&quot;1.5&quot;/><path d=&quot;M3 17l3-3 2 2 2-3 3 2 2-2 3 3 3-3&quot;/></svg></div>'">
+                </div>
+                <div class="cat-preview-item gallery-img">
+                    <img class="photo-placeholder" src="images/photo-work-2.jpg" alt="工作现场作品2" onerror="this.outerHTML='<div class=&quot;cat-preview-item photo-placeholder gallery-img&quot; data-label=&quot;图片缺失：photo-work-2.jpg&quot;><svg viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot;><rect x=&quot;3&quot; y=&quot;5&quot; width=&quot;18&quot; height=&quot;14&quot; rx=&quot;2&quot;/><circle cx=&quot;9&quot; cy=&quot;10&quot; r=&quot;2&quot;/><path d=&quot;M3 17l5-5 4 4 3-3 6 6&quot;/></svg></div>'">
+                </div>
+            </div>
+            <button class="cat-expand-btn">
+                展开全部作品
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="cat-detail">
+                <div class="cat-img gallery-img"><img class="photo-placeholder" src="images/photo-work-1.jpg" alt="工作现场作品1" onerror="this.outerHTML='<div class=&quot;cat-img photo-placeholder gallery-img&quot;><svg viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot;><rect x=&quot;3&quot; y=&quot;5&quot; width=&quot;18&quot; height=&quot;14&quot; rx=&quot;2&quot;/><circle cx=&quot;8&quot; cy=&quot;10&quot; r=&quot;1.5&quot;/><circle cx=&quot;12&quot; cy=&quot;9&quot; r=&quot;1.5&quot;/><circle cx=&quot;16&quot; cy=&quot;10&quot; r=&quot;1.5&quot;/><path d=&quot;M3 17l3-3 2 2 2-3 3 2 2-2 3 3 3-3&quot;/></svg></div>'"></div>
+                <div class="cat-img gallery-img"><img class="photo-placeholder" src="images/photo-work-2.jpg" alt="工作现场作品2" onerror="this.outerHTML='<div class=&quot;cat-img photo-placeholder gallery-img&quot;><svg viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot;><rect x=&quot;3&quot; y=&quot;5&quot; width=&quot;18&quot; height=&quot;14&quot; rx=&quot;2&quot;/><circle cx=&quot;9&quot; cy=&quot;10&quot; r=&quot;2&quot;/><path d=&quot;M3 17l5-5 4 4 3-3 6 6&quot;/></svg></div>'"></div>
+                <div class="cat-img gallery-img"><img class="photo-placeholder" src="images/photo-work-3.jpg" alt="工作现场作品3" onerror="this.outerHTML='<div class=&quot;cat-img photo-placeholder gallery-img&quot;><svg viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot;><rect x=&quot;3&quot; y=&quot;3&quot; width=&quot;18&quot; height=&quot;18&quot; rx=&quot;2&quot;/><path d=&quot;M7 7h10M7 12h10M7 17h6&quot;/></svg></div>'"></div>
+                <div class="cat-img gallery-img"><img class="photo-placeholder" src="images/photo-work-4.jpg" alt="工作现场作品4" onerror="this.outerHTML='<div class=&quot;cat-img photo-placeholder gallery-img&quot;><svg viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot;><rect x=&quot;3&quot; y=&quot;5&quot; width=&quot;18&quot; height=&quot;14&quot; rx=&quot;2&quot;/><circle cx=&quot;9&quot; cy=&quot;10&quot; r=&quot;2&quot;/><path d=&quot;M3 17l5-5 4 4 3-3 6 6&quot;/></svg></div>'"></div>
+                <div class="cat-img gallery-img"><img class="photo-placeholder" src="images/photo-work-5.jpg" alt="工作现场作品5" onerror="this.outerHTML='<div class=&quot;cat-img photo-placeholder gallery-img&quot;><svg viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot;><rect x=&quot;3&quot; y=&quot;5&quot; width=&quot;18&quot; height=&quot;14&quot; rx=&quot;2&quot;/><circle cx=&quot;9&quot; cy=&quot;10&quot; r=&quot;2&quot;/><path d=&quot;M3 17l5-5 4 4 3-3 6 6&quot;/></svg></div>'"></div>
+                <div class="cat-img gallery-img"><img class="photo-placeholder" src="images/photo-work-6.jpg" alt="工作现场作品6" onerror="this.outerHTML='<div class=&quot;cat-img photo-placeholder gallery-img&quot;><svg viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot;><rect x=&quot;3&quot; y=&quot;5&quot; width=&quot;18&quot; height=&quot;14&quot; rx=&quot;2&quot;/><circle cx=&quot;8&quot; cy=&quot;10&quot; r=&quot;1.5&quot;/><circle cx=&quot;12&quot; cy=&quot;9&quot; r=&quot;1.5&quot;/><circle cx=&quot;16&quot; cy=&quot;10&quot; r=&quot;1.5&quot;/><path d=&quot;M3 17l3-3 2 2 2-3 3 2 2-2 3 3 3-3&quot;/></svg></div>'"></div>
+                <div class="cat-img gallery-img"><img class="photo-placeholder" src="images/photo-work-7.jpg" alt="工作现场作品7" onerror="this.outerHTML='<div class=&quot;cat-img photo-placeholder gallery-img&quot;><svg viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot;><rect x=&quot;3&quot; y=&quot;3&quot; width=&quot;18&quot; height=&quot;18&quot; rx=&quot;2&quot;/><rect x=&quot;6&quot; y=&quot;6&quot; width=&quot;12&quot; height=&quot;12&quot;/></svg></div>'"></div>
+                <div class="cat-img gallery-img"><img class="photo-placeholder" src="images/photo-work-8.jpg" alt="工作现场作品8" onerror="this.outerHTML='<div class=&quot;cat-img photo-placeholder gallery-img&quot;><svg viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot;><rect x=&quot;3&quot; y=&quot;5&quot; width=&quot;18&quot; height=&quot;14&quot; rx=&quot;2&quot;/><circle cx=&quot;9&quot; cy=&quot;10&quot; r=&quot;2&quot;/><path d=&quot;M3 17l5-5 4 4 3-3 6 6&quot;/></svg></div>'"></div>
+            </div>
+        </div>
+
+        <div class="cat-card" data-cat="wedding">
+            <div class="cat-head">
+                <div class="cat-name">
+                    <h4>婚礼跟拍</h4>
+                    <span class="cat-en">Wedding</span>
+                </div>
+                <span class="cat-count">6 PICS</span>
+            </div>
+            <div class="cat-preview">
+                <div class="cat-preview-item gallery-img">
+                    <img class="photo-placeholder" src="images/photo-wedding-1.jpg" alt="婚礼跟拍作品1" onerror="this.outerHTML='<div class=&quot;cat-preview-item photo-placeholder gallery-img&quot; data-label=&quot;图片缺失：photo-wedding-1.jpg&quot;><svg viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot;><path d=&quot;M12 21s-7-4.35-7-10a5 5 0 019-3 5 5 0 019 3c0 5.65-7 10-7 10z&quot;/><circle cx=&quot;12&quot; cy=&quot;10&quot; r=&quot;2&quot;/></svg></div>'">
+                </div>
+                <div class="cat-preview-item gallery-img">
+                    <img class="photo-placeholder" src="images/photo-wedding-2.jpg" alt="婚礼跟拍作品2" onerror="this.outerHTML='<div class=&quot;cat-preview-item photo-placeholder gallery-img&quot; data-label=&quot;图片缺失：photo-wedding-2.jpg&quot;><svg viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot;><rect x=&quot;3&quot; y=&quot;5&quot; width=&quot;18&quot; height=&quot;14&quot; rx=&quot;2&quot;/><path d=&quot;M9 11a2 2 0 100-4 2 2 0 000 4z&quot;/><path d=&quot;M3 17l5-5 3 3 2-2 8 8&quot;/></svg></div>'">
+                </div>
+            </div>
+            <button class="cat-expand-btn">
+                展开全部作品
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="cat-detail">
+                <div class="cat-img gallery-img"><img class="photo-placeholder" src="images/photo-wedding-1.jpg" alt="婚礼跟拍作品1" onerror="this.outerHTML='<div class=&quot;cat-img photo-placeholder gallery-img&quot;><svg viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot;><path d=&quot;M9 11a2 2 0 100-4 2 2 0 000 4z&quot;/><path d=&quot;M3 17l5-5 3 3 2-2 8 8&quot;/></svg></div>'"></div>
+                <div class="cat-img gallery-img"><img class="photo-placeholder" src="images/photo-wedding-2.jpg" alt="婚礼跟拍作品2" onerror="this.outerHTML='<div class=&quot;cat-img photo-placeholder gallery-img&quot;><svg viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot;><path d=&quot;M12 21s-7-4.35-7-10a5 5 0 019-3 5 5 0 019 3c0 5.65-7 10-7 10z&quot;/><circle cx=&quot;12&quot; cy=&quot;10&quot; r=&quot;2&quot;/></svg></div>'"></div>
+                <div class="cat-img gallery-img"><img class="photo-placeholder" src="images/photo-wedding-3.jpg" alt="婚礼跟拍作品3" onerror="this.outerHTML='<div class=&quot;cat-img photo-placeholder gallery-img&quot;><svg viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot;><rect x=&quot;3&quot; y=&quot;5&quot; width=&quot;18&quot; height=&quot;14&quot; rx=&quot;2&quot;/><path d=&quot;M9 11a2 2 0 100-4 2 2 0 000 4z&quot;/><path d=&quot;M3 17l5-5 4 4 3-3 6 6&quot;/></svg></div>'"></div>
+                <div class="cat-img gallery-img"><img class="photo-placeholder" src="images/photo-wedding-4.jpg" alt="婚礼跟拍作品4" onerror="this.outerHTML='<div class=&quot;cat-img photo-placeholder gallery-img&quot;><svg viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot;><rect x=&quot;3&quot; y=&quot;5&quot; width=&quot;18&quot; height=&quot;14&quot; rx=&quot;2&quot;/><circle cx=&quot;9&quot; cy=&quot;10&quot; r=&quot;2&quot;/><path d=&quot;M3 17l5-5 4 4 3-3 6 6&quot;/></svg></div>'"></div>
+                <div class="cat-img gallery-img"><img class="photo-placeholder" src="images/photo-wedding-5.jpg" alt="婚礼跟拍作品5" onerror="this.outerHTML='<div class=&quot;cat-img photo-placeholder gallery-img&quot;><svg viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot;><rect x=&quot;3&quot; y=&quot;5&quot; width=&quot;18&quot; height=&quot;14&quot; rx=&quot;2&quot;/><path d=&quot;M9 11a2 2 0 100-4 2 2 0 000 4z&quot;/><path d=&quot;M3 17l5-5 3 3 2-2 8 8&quot;/></svg></div>'"></div>
+                <div class="cat-img gallery-img"><img class="photo-placeholder" src="images/photo-wedding-6.jpg" alt="婚礼跟拍作品6" onerror="this.outerHTML='<div class=&quot;cat-img photo-placeholder gallery-img&quot;><svg viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot;><path d=&quot;M12 21s-7-4.35-7-10a5 5 0 019-3 5 5 0 019 3c0 5.65-7 10-7 10z&quot;/><circle cx=&quot;12&quot; cy=&quot;10&quot; r=&quot;2&quot;/></svg></div>'"></div>
+            </div>
+        </div>
+
+        <div class="cat-card" data-cat="life">
+            <div class="cat-head">
+                <div class="cat-name">
+                    <h4>生活日常</h4>
+                    <span class="cat-en">Daily Life</span>
+                </div>
+                <span class="cat-count">8 PICS</span>
+            </div>
+            <div class="cat-preview">
+                <div class="cat-preview-item gallery-img">
+                    <img class="photo-placeholder" src="images/photo-life-1.jpg" alt="生活日常作品1" onerror="this.outerHTML='<div class=&quot;cat-preview-item photo-placeholder gallery-img&quot; data-label=&quot;图片缺失：photo-life-1.jpg&quot;><svg viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot;><circle cx=&quot;12&quot; cy=&quot;11&quot; r=&quot;4&quot;/><path d=&quot;M3 18h18M5 18c2-4 6-5 9-2M19 18c-1-3-4-4-7-2&quot;/></svg></div>'">
+                </div>
+                <div class="cat-preview-item gallery-img">
+                    <img class="photo-placeholder" src="images/photo-life-2.jpg" alt="生活日常作品2" onerror="this.outerHTML='<div class=&quot;cat-preview-item photo-placeholder gallery-img&quot; data-label=&quot;图片缺失：photo-life-2.jpg&quot;><svg viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot;><path d=&quot;M4 4h16v16H4z&quot;/><path d=&quot;M8 8h8v8H8z&quot;/></svg></div>'">
+                </div>
+            </div>
+            <button class="cat-expand-btn">
+                展开全部作品
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="cat-detail">
+                <div class="cat-img gallery-img"><img class="photo-placeholder" src="images/photo-life-1.jpg" alt="生活日常作品1" onerror="this.outerHTML='<div class=&quot;cat-img photo-placeholder gallery-img&quot;><svg viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot;><circle cx=&quot;12&quot; cy=&quot;11&quot; r=&quot;4&quot;/><path d=&quot;M3 18h18M5 18c2-4 6-5 9-2M19 18c-1-3-4-4-7-2&quot;/></svg></div>'"></div>
+                <div class="cat-img gallery-img"><img class="photo-placeholder" src="images/photo-life-2.jpg" alt="生活日常作品2" onerror="this.outerHTML='<div class=&quot;cat-img photo-placeholder gallery-img&quot;><svg viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot;><rect x=&quot;3&quot; y=&quot;7&quot; width=&quot;18&quot; height=&quot;10&quot; rx=&quot;1&quot;/><circle cx=&quot;8&quot; cy=&quot;11&quot; r=&quot;1.2&quot;/><circle cx=&quot;12&quot; cy=&quot;10&quot; r=&quot;1.2&quot;/><circle cx=&quot;16&quot; cy=&quot;11&quot; r=&quot;1.2&quot;/><circle cx=&quot;20&quot; cy=&quot;10&quot; r=&quot;1.2&quot;/></svg></div>'"></div>
+                <div class="cat-img gallery-img"><img class="photo-placeholder" src="images/photo-life-3.jpg" alt="生活日常作品3" onerror="this.outerHTML='<div class=&quot;cat-img photo-placeholder gallery-img&quot;><svg viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot;><path d=&quot;M3 8h14v7a4 4 0 01-4 4H7a4 4 0 01-4-4V8z&quot;/><path d=&quot;M17 10h2a2 2 0 010 4h-2M8 2v3M12 2v3&quot;/></svg></div>'"></div>
+                <div class="cat-img gallery-img"><img class="photo-placeholder" src="images/photo-life-4.jpg" alt="生活日常作品4" onerror="this.outerHTML='<div class=&quot;cat-img photo-placeholder gallery-img&quot;><svg viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot;><rect x=&quot;3&quot; y=&quot;5&quot; width=&quot;18&quot; height=&quot;14&quot; rx=&quot;2&quot;/><rect x=&quot;7&quot; y=&quot;8&quot; width=&quot;10&quot; height=&quot;6&quot; rx=&quot;1&quot;/><circle cx=&quot;12&quot; cy=&quot;18&quot; r=&quot;0.8&quot;/></svg></div>'"></div>
+                <div class="cat-img gallery-img"><img class="photo-placeholder" src="images/photo-life-5.jpg" alt="生活日常作品5" onerror="this.outerHTML='<div class=&quot;cat-img photo-placeholder gallery-img&quot;><svg viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot;><rect x=&quot;3&quot; y=&quot;3&quot; width=&quot;18&quot; height=&quot;18&quot; rx=&quot;2&quot;/><path d=&quot;M7 8h10M7 12h10M7 16h6&quot;/></svg></div>'"></div>
+                <div class="cat-img gallery-img"><img class="photo-placeholder" src="images/photo-life-6.jpg" alt="生活日常作品6" onerror="this.outerHTML='<div class=&quot;cat-img photo-placeholder gallery-img&quot;><svg viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot;><circle cx=&quot;12&quot; cy=&quot;12&quot; r=&quot;9&quot;/><path d=&quot;M3 12h18M12 3v18&quot;/><circle cx=&quot;12&quot; cy=&quot;12&quot; r=&quot;5&quot;/></svg></div>'"></div>
+                <div class="cat-img gallery-img"><img class="photo-placeholder" src="images/photo-life-7.jpg" alt="生活日常作品7" onerror="this.outerHTML='<div class=&quot;cat-img photo-placeholder gallery-img&quot;><svg viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot;><circle cx=&quot;12&quot; cy=&quot;11&quot; r=&quot;4&quot;/><path d=&quot;M3 18h18M5 18c2-4 6-5 9-2M19 18c-1-3-4-4-7-2&quot;/></svg></div>'"></div>
+                <div class="cat-img gallery-img"><img class="photo-placeholder" src="images/photo-life-8.jpg" alt="生活日常作品8" onerror="this.outerHTML='<div class=&quot;cat-img photo-placeholder gallery-img&quot;><svg viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.2&quot;><path d=&quot;M4 4h16v16H4z&quot;/><path d=&quot;M8 8h8v8H8z&quot;/></svg></div>'"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section contact" id="contact">
+    <div class="contact-inner">
+        <div class="section-label left-only">
+            <span class="label-num">06</span>
+            <h2 class="section-title">联系<em> · Contact</em></h2>
+        </div>
+
+        <p class="contact-line">如果有合作邀约、音乐漫谈、或只是想打个招呼——</p>
+
+        <div class="contact-grid contact-grid-5">
+            <div class="contact-card">
+                <div class="c-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+                </div>
+                <h4>Email</h4>
+                <p>zeng.ian@outlook.com</p>
+            </div>
+
+            <div class="contact-card">
+                <div class="c-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.86 19.86 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.86 19.86 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                </div>
+                <h4>Phone</h4>
+                <p>+86 136 8791 8205</p>
+            </div>
+
+            <div class="contact-card">
+                <div class="c-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3l2 4 4 .6-3 3 .8 4.4L12 13l-3.8 2 .8-4.4-3-3L10 7z"/><circle cx="12" cy="12" r="10"/></svg>
+                </div>
+                <h4>小红书账号</h4>
+                <p>95302083411</p>
+            </div>
+
+            <div class="contact-card">
+                <div class="c-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8.5 10.5a1 1 0 110-2 1 1 0 010 2zm5 0a1 1 0 110-2 1 1 0 010 2z"/><path d="M21 12a8 8 0 01-11.84 7.01L7 20l1.04-2.07A8 8 0 1121 12z"/></svg>
+                </div>
+                <h4>微信</h4>
+                <p>iancris_1016</p>
+            </div>
+
+            <div class="contact-card">
+                <div class="c-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3c-3.5 0-6 2.5-6 6 0 1 .2 2 .5 2.8C5 12.8 4 14.5 4 16c0 2 2 3 4 3h8c2 0 4-1 4-3 0-1.5-1-3.2-2.5-4.2.3-.8.5-1.8.5-2.8 0-3.5-2.5-6-6-6z"/></svg>
+                </div>
+                <h4>QQ</h4>
+                <p>1803861827</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="foot-inner">
+        <div class="foot-brand">
+            <span class="logo-serif">IAN ZENG · 曾纪元</span>
+            <p class="foot-sub">© 2026 曾纪元 · All rights reserved.</p>
+        </div>
+        <div class="foot-meta">
+            <p>江西财经大学 · 数字贸易方向 · 27届</p>
+            <p class="foot-email">zeng.ian@outlook.com</p>
+        </div>
+    </div>
+    <div class="foot-strip">
+        <p>International Trade · Brand Global · Media · Photography · Writing</p>
+    </div>
+</footer>
+
+<div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lb-close" id="lbClose" aria-label="关闭">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M6 18L18 6"/></svg>
+    </button>
+    <div class="lb-content">
+        <div class="lb-image photo-placeholder lb-img" id="lbImage">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M3 17l5-5 4 4 3-3 6 6"/></svg>
+        </div>
+        <p class="lb-caption" id="lbCaption">Photo caption</p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
